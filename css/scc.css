@@ -1,0 +1,222 @@
+/* this is the 'style'.css*/
+
+/*fonts starts*/
+@font-face {
+    font-family: 'futura';
+    src: url('../fonts/Futura-Condensed-Normal.eot');
+    src: url('../fonts/Futura-Condensed-Normal.eot?#iefix') format('embedded-opentype'),
+         			url('../fonts/Futura-Condensed-Normal.woff2') format('woff2'),
+         			url('../fonts/Futura-Condensed-Normal.woff') format('woff'),
+        			 url('../fonts/futura-condensedlight.ttf') format('truetype'),/
+         		url('../fonts/Futura-Condensed-Normal.svg#Futura-Condensed-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*fonts ends*/
+
+/*responsive starts*/
+@media screen and (max-width: 1366px) {
+.container{
+width: 100%;
+}
+.cart{
+width: auto;
+}
+}
+@media screen and (max-width: 1080px) {
+.container, .main-contact{
+width: 100%;
+}
+.cart{
+width: auto;
+}
+}
+@media screen and (max-width: 480px) {
+.product-exhibition, .description{
+width: 100%;
+}
+.cart-icon{
+display: inline-block;
+}
+
+}
+/*responsive ends*/
+
+
+/* headers & footers starts*/
+header.main-header{
+  background-color: #F6F6F7;
+
+
+  width:100%;
+	margin-bottom: 3rem;
+}
+
+.cart{
+
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+  color: #888;
+}
+
+.cart-content{
+  
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  z-index: 99;
+}
+
+.cart-content:hover .selected-product{
+  display: block;
+}
+
+.cart-content:hover .cart-content{
+    border: 1px #ccc solid;
+    border-bottom: none;
+}
+
+.selected-product {
+  background: white;
+  padding: 1rem; margin: 0;
+  width: 15rem;
+  border: 1px #ccc solid;
+  position: absolute;
+  right: .5%;
+  display: none;
+}
+
+.selected-product li {
+    list-style-type:none;
+    width: 100%;
+    margin: 1rem;
+  }
+
+.selected-product li div {
+    display: inline-block;
+  }
+  .cart-icon{
+    display: none;
+  }
+/* headers & footers ends*/
+
+
+/*maincontact starts*/
+.required-star:after{
+  content: "*";
+  color: #C90000
+}
+
+body{
+  font-family: 'futura';
+  color: #222;
+}
+
+.container{
+  max-width:  1366px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.main-contact{
+width: 100%;
+margin: 0 auto;
+}
+
+.product-exhibition{
+  vertical-align: top;
+  display: inline-block;
+  width:45%;
+
+}
+
+.product-img img{
+  max-width: 72%;
+}
+.product-img {
+  text-align: center;
+}
+
+.description{
+  padding: 0 1.2rem 0 1.2rem;
+  vertical-align: top;
+  display: inline-block;
+  font-size: .8rem;
+  color: #888;
+  width: 48%;
+}
+.price{
+  border-top: 1px #ccc  solid;
+  border-bottom: 1px #ccc solid;
+}
+h2{
+  color: #222;
+}
+.desc{
+  text-align:justify;
+}
+
+.selection{
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: #888;
+  text-transform: uppercase;
+}
+.selection ul li{
+  width: 3.75rem;height: 3.75rem;line-height: 3.75rem;
+  display: inline-block;
+  border: 1px #ccc solid;
+  text-align: center;
+  cursor: pointer;
+}
+.selection ul li:hover, .prod-sizes ul li.active{
+  border: 2px #222222 solid;
+width: 3.5rem;height: 3.5rem;line-height: 3.5rem;
+  color: #222;
+}
+.selected{
+  color: #222;
+}
+
+.add2cart{
+  background-color: #fff;
+  color: #000;
+  border: 2px #222 solid;
+  text-transform: uppercase;
+  padding: 0.75rem;
+  outline: 0;
+  letter-spacing: 0.125rem;
+  cursor: pointer;
+}
+
+.add2cart:hover {
+  border: 2px solid #ccc;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: color .2s;
+      transition: color .2s;
+}
+
+.cart-img {
+  width: 40%;
+  text-align: center;
+}
+  li .cart-img img {
+      width: 5rem;
+  }
+li .cart-desc{
+  width: 60%;
+  vertical-align: top;
+}
+  li .cart-desc p{
+    color: #222;
+    text-align: left;
+    font-size: 0.85rem;
+    margin: 0.33rem 0 1.8rem 0;
+  }
+
+
+
+/*maincontact ends*/
